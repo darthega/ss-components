@@ -1,0 +1,22 @@
+{
+  "name": "ss-components-workshop",
+  "version": "0.0.0",
+  "description": "This is the repository that supports the workshop for Design System web components.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darthega/ss-components.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darthega/ss-components/issues"
+  },
+  "homepage": "https://github.com/darthega/ss-components#readme",
+  "dependencies": {
+    "ss-components": "^3.15.3"
+  }
+}
