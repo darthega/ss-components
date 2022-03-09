@@ -26,7 +26,8 @@ section {
   padding: 20px;
 }
 
-.sticky .side-content {
+.sticky .side-content,
+.navigation .side-content {
   display: grid;
   grid-template-rows: 1fr auto;
   height: 100%;
@@ -35,8 +36,21 @@ section {
 .sticky .side-content > div {
   font-size: 40px;
 }
-.sticky ss-side-sticky {
+
+.sticky ss-side-sticky,
+.navigation ss-side-sticky {
   background-color: var(--color-surface);
   bottom: 0;
   position: sticky;
+}
+
+.navigation .slide {
+  width: 100%;
+}
+
+.navigation .back {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 21;
 }

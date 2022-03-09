@@ -107,6 +107,250 @@
           </div>
         </ss-side-slider>
       </section>
+      <section class="navigation carousel">
+        <div>
+          <h3>Side Slider navigation - Carousel</h3>
+          <code lang="html">
+            <pre>
+            &lt;ss-side-slider&gt;
+              &lt;ss-carousel show-controls="false"&gt;
+                &lt;div class="slide"&gt;
+                  &lt;div&gt;
+                    &lt;ss-side-title&gt;
+                    &lt;/ss-side-title&gt;
+          
+                    ...content...
+                    
+                  &lt;/div&gt;
+                  &lt;ss-side-sticky&gt;
+                  &lt;/ss-side-sticky&gt;
+                &lt;/div&gt;
+
+                 &lt;div class="slide"&gt;
+                  &lt;div&gt;
+                    &lt;ss-side-title&gt;
+                    &lt;/ss-side-title&gt;
+          
+                    ...content...
+                    
+                  &lt;/div&gt;
+                  &lt;ss-side-sticky&gt;
+                  &lt;/ss-side-sticky&gt;
+                &lt;/div&gt;
+              &lt;/ss-carousel&gt;
+            &lt;/ss-side-slider&gt;
+            </pre>
+          </code>
+        </div>
+        <ss-button label="Open carousel navigation"></ss-button>
+        <ss-side-slider hide-close-button="all">
+          <ss-button
+            class="back"
+            icon="icon-arrow-left"
+            shape="round"
+            size="small"
+            background="light"
+          ></ss-button>
+          <ss-carousel show-controls="false">
+            <div class="slide side-content">
+              <div>
+                <ss-side-title
+                  main-title="Testing dummy plain content"
+                  top-subtitle="&lt;ss-side-title&gt; component"
+                  bottom-subtitle="Bottom subtitle"
+                ></ss-side-title>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis doloribus placeat repellat ad aut nobis nisi
+                  perspiciatis quod laudantium velit, fuga excepturi, in minima
+                  eius eum ipsa cum eaque iusto!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis doloribus placeat repellat ad aut nobis nisi
+                  perspiciatis quod laudantium velit, fuga excepturi, in minima
+                  eius eum ipsa cum eaque iusto!
+                </p>
+              </div>
+              <ss-side-sticky
+                data-slide="0"
+                main-btn-label="Next"
+              ></ss-side-sticky>
+            </div>
+
+            <div class="slide side-content">
+              <div>
+                <ss-side-title
+                  main-title="Testing dummy plain content"
+                  top-subtitle="&lt;ss-side-title&gt; component"
+                  bottom-subtitle="Bottom subtitle"
+                ></ss-side-title>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis doloribus placeat repellat ad aut nobis nisi
+                  perspiciatis quod laudantium velit, fuga excepturi, in minima
+                  eius eum ipsa cum eaque iusto!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis doloribus placeat repellat ad aut nobis nisi
+                  perspiciatis quod laudantium velit, fuga excepturi, in minima
+                  eius eum ipsa cum eaque iusto!
+                </p>
+              </div>
+              <ss-side-sticky
+                data-slide="1"
+                main-btn-label="Next"
+              ></ss-side-sticky>
+            </div>
+
+            <div class="slide side-content">
+              <div>
+                <ss-side-title
+                  main-title="Testing dummy plain content"
+                  top-subtitle="&lt;ss-side-title&gt; component"
+                  bottom-subtitle="Bottom subtitle"
+                ></ss-side-title>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis doloribus placeat repellat ad aut nobis nisi
+                  perspiciatis quod laudantium velit, fuga excepturi, in minima
+                  eius eum ipsa cum eaque iusto!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis doloribus placeat repellat ad aut nobis nisi
+                  perspiciatis quod laudantium velit, fuga excepturi, in minima
+                  eius eum ipsa cum eaque iusto!
+                </p>
+              </div>
+              <ss-side-sticky
+                data-slide="2"
+                main-btn-label="Next"
+              ></ss-side-sticky>
+            </div>
+
+            <div class="slide side-content">
+              <div>
+                <ss-side-title
+                  main-title="Testing dummy plain content"
+                  top-subtitle="&lt;ss-side-title&gt; component"
+                  bottom-subtitle="Bottom subtitle"
+                ></ss-side-title>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis doloribus placeat repellat ad aut nobis nisi
+                  perspiciatis quod laudantium velit, fuga excepturi, in minima
+                  eius eum ipsa cum eaque iusto!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis doloribus placeat repellat ad aut nobis nisi
+                  perspiciatis quod laudantium velit, fuga excepturi, in minima
+                  eius eum ipsa cum eaque iusto!
+                </p>
+              </div>
+              <ss-side-sticky
+                data-slide="3"
+                main-btn-label="Apply"
+              ></ss-side-sticky>
+            </div>
+          </ss-carousel>
+        </ss-side-slider>
+      </section>
+      <section class="navigation viewer">
+        <div>
+          <h3>Side Slider navigation - Side viewer</h3>
+          <code lang="html">
+            <pre>
+            &lt;ss-side-slider&gt;
+              &lt;ss-side-viewer&gt;
+                &lt;div slot="main"&gt;
+                  &lt;div&gt;
+                    &lt;ss-side-title&gt;
+                    &lt;/ss-side-title&gt;
+          
+                    ...content...
+                    
+                  &lt;/div&gt;
+                  &lt;ss-side-sticky&gt;
+                  &lt;/ss-side-sticky&gt;
+                &lt;/div&gt;
+
+                 &lt;div slot="next"&gt;
+                  &lt;div&gt;
+                    &lt;ss-side-title&gt;
+                    &lt;/ss-side-title&gt;
+          
+                    ...content...
+                    
+                  &lt;/div&gt;
+                  &lt;ss-side-sticky&gt;
+                  &lt;/ss-side-sticky&gt;
+                &lt;/div&gt;
+              &lt;/ss-side-viewer&gt;
+            &lt;/ss-side-slider&gt;
+            </pre>
+          </code>
+        </div>
+        <ss-button label="Open side viewer navigation"></ss-button>
+        <ss-side-slider hide-close-button="all">
+          <ss-side-viewer has-positioned-contents="true">
+            <div class="side-content" slot="main">
+              <div>
+                <ss-side-title
+                  main-title="Testing dummy plain content"
+                  top-subtitle="&lt;ss-side-title&gt; component"
+                  bottom-subtitle="Bottom subtitle"
+                ></ss-side-title>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis doloribus placeat repellat ad aut nobis nisi
+                  perspiciatis quod laudantium velit, fuga excepturi, in minima
+                  eius eum ipsa cum eaque iusto!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis doloribus placeat repellat ad aut nobis nisi
+                  perspiciatis quod laudantium velit, fuga excepturi, in minima
+                  eius eum ipsa cum eaque iusto!
+                </p>
+              </div>
+              <ss-side-sticky main-btn-label="Next"></ss-side-sticky>
+            </div>
+
+            <div class="side-content" slot="next">
+              <div>
+                <ss-side-title
+                  main-title="Testing dummy plain content"
+                  top-subtitle="&lt;ss-side-title&gt; component"
+                  bottom-subtitle="Bottom subtitle"
+                ></ss-side-title>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis doloribus placeat repellat ad aut nobis nisi
+                  perspiciatis quod laudantium velit, fuga excepturi, in minima
+                  eius eum ipsa cum eaque iusto!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis doloribus placeat repellat ad aut nobis nisi
+                  perspiciatis quod laudantium velit, fuga excepturi, in minima
+                  eius eum ipsa cum eaque iusto!
+                </p>
+              </div>
+              <ss-side-sticky main-btn-label="Apply"></ss-side-sticky>
+            </div>
+          </ss-side-viewer>
+          <ss-button
+            class="back"
+            icon="icon-arrow-left"
+            shape="round"
+            size="small"
+            background="light"
+          ></ss-button>
+        </ss-side-slider>
+      </section>
     </div>
     <script src="./scripts/main.js"></script>
   </body>
