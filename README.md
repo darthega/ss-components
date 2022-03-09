@@ -10,3 +10,4 @@ Each stage of the workshop is a new commit in this repository, you can travel ba
 
 1. Install dependencies
 1. Create index.html
+1. Side slider

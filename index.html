@@ -1,19 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ss-components - Design use cases</title>
 
-  <link rel="stylesheet" href="./node_modules/ss-components/dist/ss-components/ss-components.css" />
-  <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/ss-components/dist/ss-components/ss-components.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
 
-  <script type="module" src="./node_modules/ss-components/dist/ss-components/ss-components.esm.js"></script>
-  <script src="./scripts/main.js"></script>
-</head>
-<body>
-  <h1>ss-components Design recipies</h1>
-  <ss-button label="Label test"></ss-button>
-</body>
+    <script
+      type="module"
+      src="./node_modules/ss-components/dist/ss-components/ss-components.esm.js"
+    ></script>
+  </head>
+  <body>
+    <h1>ss-components Design recipies</h1>
+    <div class="side-slider">
+      <h2>Side slider</h2>
+      <section class="base">
+        <div>
+          <h3>Base</h3>
+          <code lang="html">
+            <pre>
+            &lt;ss-side-slider&gt;
+              &lt;ss-side-title&gt;
+              &lt;/ss-side-title&gt;
+              
+              ...content...
+            &lt;/ss-side-slider&gt;
+          </pre
+            >
+          </code>
+        </div>
+        <ss-button label="Open base"></ss-button>
+        <ss-side-slider>
+          <div class="side-content">
+            <ss-side-title
+              main-title="Testing dummy plain content"
+              top-subtitle="&lt;ss-side-title&gt; component"
+              bottom-subtitle="Bottom subtitle"
+            ></ss-side-title>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis doloribus placeat repellat ad aut nobis nisi
+              perspiciatis quod laudantium velit, fuga excepturi, in minima eius
+              eum ipsa cum eaque iusto!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis doloribus placeat repellat ad aut nobis nisi
+              perspiciatis quod laudantium velit, fuga excepturi, in minima eius
+              eum ipsa cum eaque iusto!
+            </p>
+          </div>
+        </ss-side-slider>
+      </section>
+    </div>
+    <script src="./scripts/main.js"></script>
+  </body>
 </html>
