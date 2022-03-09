@@ -25,3 +25,18 @@ section {
   background-color: aquamarine;
   padding: 20px;
 }
+
+.sticky .side-content {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  height: 100%;
+}
+
+.sticky .side-content > div {
+  font-size: 40px;
+}
+.sticky ss-side-sticky {
+  background-color: var(--color-surface);
+  bottom: 0;
+  position: sticky;
+}

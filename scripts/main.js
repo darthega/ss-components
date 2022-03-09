@@ -12,11 +12,21 @@ const baseSlider = () => {
   $button.addEventListener("click", buttonClick);
 };
 
+const stickySlider = () => {
+  $sticky = document.querySelector(".side-slider section.sticky");
+  $button = $sticky.querySelector("ss-button");
+  $slider = $sticky.querySelector("ss-side-slider");
+
+  $sticky.addEventListener("sideButtonClick", () => {
+    $slider.toggle();
+  });
+
   $button.addEventListener("click", buttonClick);
 };
 
 const sideSlider = () => {
   baseSlider();
+  stickySlider();
 };
 
 const init = () => {

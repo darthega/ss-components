@@ -59,6 +59,54 @@
           </div>
         </ss-side-slider>
       </section>
+      <section class="sticky">
+        <div>
+          <h3>Side Sticky</h3>
+          <code lang="html">
+            <pre>
+            &lt;ss-side-slider&gt;
+              &lt;div&gt;
+                &lt;ss-side-title&gt;
+                &lt;/ss-side-title&gt;
+      
+                ...content...
+                
+              &lt;/div&gt;
+              &lt;ss-side-sticky&gt;
+              &lt;/ss-side-sticky&gt;
+            &lt;/ss-side-slider&gt;
+          </pre
+            >
+          </code>
+        </div>
+        <ss-button label="Open sticky"></ss-button>
+        <ss-side-slider hide-close-button="all">
+          <div class="side-content">
+            <div>
+              <ss-side-title
+                main-title="Testing dummy plain content"
+                top-subtitle="&lt;ss-side-title&gt; component"
+                bottom-subtitle="Bottom subtitle"
+              ></ss-side-title>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis doloribus placeat repellat ad aut nobis nisi
+                perspiciatis quod laudantium velit, fuga excepturi, in minima
+                eius eum ipsa cum eaque iusto!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis doloribus placeat repellat ad aut nobis nisi
+                perspiciatis quod laudantium velit, fuga excepturi, in minima
+                eius eum ipsa cum eaque iusto!
+              </p>
+            </div>
+            <ss-side-sticky
+              main-btn-label="Side sticky button"
+            ></ss-side-sticky>
+          </div>
+        </ss-side-slider>
+      </section>
     </div>
     <script src="./scripts/main.js"></script>
   </body>
